@@ -1,0 +1,64 @@
+.mailing--end {
+  margin-left: 93px;
+}
+
+.mailing__text {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color-text-inverse;
+}
+
+.mailing__block [type='email'] {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+}
+
+.mailing__block [placeholder] {
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: $color-contacts-address;
+  background-color: transparent;
+}
+
+.mailing__group {
+   @include centeredFlex();
+}
+
+.mailing__button {
+  @include centeredFlex();
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $color-text-inverse;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-focus;
+  }
+}
+
+.mailing__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}

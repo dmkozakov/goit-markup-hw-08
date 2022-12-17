@@ -1,0 +1,47 @@
+.site-nav {
+  @include centeredFlex();
+}
+
+.site-nav__list {
+  @include centeredFlex();
+  @extend %list;
+}
+
+.site-nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.site-nav__link {
+  @extend %link;
+
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $color-text-primary;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav__link--current {
+  color: $color-accent;
+
+  &::after {
+    position: absolute;
+    left: -5%;
+    bottom: -1px;
+    overflow: visible;
+
+    display: block;
+    content: ' ';
+    width: 110%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $color-accent;
+  }
+}

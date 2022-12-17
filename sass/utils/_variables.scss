@@ -1,0 +1,39 @@
+$color-accent: #2196f3;
+$color-text-primary: #212121;
+$color-text-secondary: #757575;
+$color-text-inverse: #ffffff;
+
+$color-btn-bg: #f5f4fa;
+$color-btn-focus: #188ce8;
+
+$color-bg-dark: #2f303a;
+$color-bg-main: #ffffff;
+$color-bg-secondary: #f5f4fa;
+$color-bg-examples-title: rgba(47, 48, 58, 0.8);
+$color-bg-card-ovelay: rgba(33, 150, 243, 0.9);
+
+$color-modal-backdrop: rgba(0, 0, 0, 0.2);
+$color-contacts-address: rgba(255, 255, 255, 0.6);
+
+$color-icon: #afb1b8;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $color-text-primary;
+  background-color: $color-bg-main;
+}
+
+.examples__title,
+.team__title,
+.clients__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.features__descr,
+.team__pos,
+.project__subtitle {
+  color: $color-text-secondary;
+}

@@ -1,0 +1,41 @@
+.address {
+  color: $color-text-inverse;
+}
+
+.address__item {
+  display: block;
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__list {
+  @extend %list;
+}
+
+.address__link {
+  @extend %link;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $color-contacts-address;
+}
+
+.address__descr {
+  @extend %link;
+
+  display: block;
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $color-text-inverse;
+}

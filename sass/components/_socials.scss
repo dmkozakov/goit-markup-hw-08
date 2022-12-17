@@ -1,0 +1,55 @@
+.socials__list {
+  @extend %list;
+  @include centeredFlex();
+  gap: 10px;
+}
+
+// .socials__item:not(:first-child) {
+//   margin-left: 10px;
+// }
+
+.socials__link {
+  @extend %link;
+  @include centeredFlex();
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $color-icon;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color-text-inverse;
+    background-color: $color-accent;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+// Соцмережі у футері
+
+.page-footer__socials {
+  margin-left: 70px;
+}
+
+.socials__label {
+  margin-bottom: 20px;
+
+  color: $color-text-inverse;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.socials__link--footer {
+  color: $color-text-inverse;
+  background-color: rgba(255, 255, 255, 0.1);
+}
