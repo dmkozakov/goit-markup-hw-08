@@ -1,6 +1,6 @@
-.mailing--end {
-  margin-left: 93px;
-}
+// .mailing--end {
+//   margin-left: 93px;
+// }
 
 .mailing__text {
   display: block;
@@ -14,13 +14,8 @@
   color: $color-text-inverse;
 }
 
-.mailing__block [type='email'] {
-  margin-right: 12px;
-  width: 358px;
-  height: 50px;
-}
-
-.mailing__block [placeholder] {
+.mailing__input {
+  margin-bottom: 20px;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -34,12 +29,20 @@
   background-color: transparent;
 }
 
-.mailing__group {
-   @include centeredFlex();
+.mailing__block [type='email'] {
+  width: 100%;
+  height: 50px;
+  //   margin-right: 12px;
+  //   width: 358px;
 }
+
+// .mailing__group {
+//    @include centeredFlex();
+// }
 
 .mailing__button {
   @include centeredFlex();
+  margin: 0 auto;
 
   width: 200px;
   height: 50px;
@@ -51,14 +54,10 @@
   letter-spacing: 0.06em;
 
   color: $color-text-inverse;
-
-  &:hover,
-  &:focus {
-    background-color: $color-btn-focus;
-  }
 }
 
 .mailing__icon {
-  margin-left: 10px;
+  margin-left: 12px;
+  //   margin-left: 10px;
   fill: currentColor;
 }

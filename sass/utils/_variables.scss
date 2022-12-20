@@ -17,6 +17,12 @@ $color-contacts-address: rgba(255, 255, 255, 0.6);
 
 $color-icon: #afb1b8;
 
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
 body {
   font-family: 'Roboto', sans-serif;
   color: $color-text-primary;
@@ -26,8 +32,10 @@ body {
 .examples__title,
 .team__title,
 .clients__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+  // font-size: 36px;
+  // line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }

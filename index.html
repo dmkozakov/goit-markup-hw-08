@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -22,6 +29,12 @@
           <a href="./index.html" class="logo page-header__logo">
             <span class="logo logo--accent">Web</span>Studio</a
           >
+          <button type="button" class="site-nav__button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
@@ -393,9 +406,9 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer footer__section">
+    <footer class="footer section footer__section">
       <div class="page-footer container">
-        <div>
+        <div class="page-footer__wrapper">
           <a href="./index.html" class="logo page-footer__logo"
             ><span class="logo logo--accent">Web</span>Studio</a
           >
@@ -459,7 +472,7 @@
             <h2 id="mailing-block" class="mailing__text">Підпишіться на розсилку</h2>
             <div class="mailing__group">
               <input
-                class="mailimg__input"
+                class="mailing__input"
                 type="email"
                 name="email"
                 id="mailing-email"

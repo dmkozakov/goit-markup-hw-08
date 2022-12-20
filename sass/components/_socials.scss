@@ -4,9 +4,9 @@
   gap: 10px;
 }
 
-// .socials__item:not(:first-child) {
-//   margin-left: 10px;
-// }
+// // .socials__item:not(:first-child) {
+// //   margin-left: 10px;
+// // }
 
 .socials__link {
   @extend %link;
@@ -35,7 +35,8 @@
 // Соцмережі у футері
 
 .page-footer__socials {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  // margin-left: 70px;
 }
 
 .socials__label {

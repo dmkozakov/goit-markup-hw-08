@@ -69,15 +69,19 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* Чекбокс */
+// /* Чекбокс */
 
 .form__checkbox {
-  @include centeredFlex();
+    display: flex;
+    align-items: center;
+//   @include centeredFlex();
 
-  margin: 20px auto 30px;
+    margin: 20px auto 30px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+  //   font-size: 14px;
+  //   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -88,7 +92,8 @@
 .checkbox__icon {
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
+  //   margin-right: 7px;
 
   background-image: url(../images/icon-checkbox.svg);
   background-size: contain;

@@ -1,7 +1,6 @@
 .clients__title {
-  margin-bottom: 50px;
-
-  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  //   margin-bottom: 50px;
 }
 
 .clients__list {
@@ -13,8 +12,9 @@
 }
 
 .clients__item {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
+  //   flex-basis: calc((100% - 150px) / 6);
 
   //   &:not(:first-child) {
   //   margin-left: 30px;

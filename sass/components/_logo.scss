@@ -1,21 +1,26 @@
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
 
   color: #000000;
+  // Шрифт для десктопу
+  // font-size: 26px;
+  // line-height: 1.19;
 }
 
 .page-header__logo {
-  margin-right: 94px;
+  padding: 16px 0;
+  // margin-right: 94px;
 }
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  // margin-bottom: 20px;
 
   color: $color-text-inverse;
 }
