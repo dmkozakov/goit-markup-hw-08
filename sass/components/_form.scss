@@ -72,11 +72,13 @@
 // /* Чекбокс */
 
 .form__checkbox {
-    display: flex;
-    align-items: center;
-//   @include centeredFlex();
+  display: inline-flex;
+  // // display: flex;
+  align-items: center;
+  // @include centeredFlex();
+  flex-wrap: wrap;
 
-    margin: 20px auto 30px;
+  margin: 20px auto 30px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -90,13 +92,14 @@
 }
 
 .checkbox__icon {
+  // display: inline-flex;
   width: 16px;
   height: 15px;
   margin-right: 8px;
   //   margin-right: 7px;
 
   background-image: url(../images/icon-checkbox.svg);
-  background-size: contain;
+  // background-size: contain;
   background-repeat: no-repeat;
 
   .checkbox__input:checked + & {

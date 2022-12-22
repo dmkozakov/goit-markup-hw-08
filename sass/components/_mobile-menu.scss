@@ -1,0 +1,151 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $color-bg-main;
+
+  transform: translateX(100%);
+  transition: transform 250ms $cubic;
+
+  &.menu-container--is-open {
+    transform: translateX(0%);
+
+    // display: flex;
+    // flex-direction: column;
+  }
+}
+
+.mobile-menu {
+  @extend %list;
+  margin-bottom: auto;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  @extend %link;
+
+  display: block;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: $color-text-primary;
+}
+
+.mobile-menu__link--current {
+  color: $color-accent;
+}
+
+.mobile-contacts {
+  @extend %list;
+
+  display: block;
+  margin-bottom: 64px;
+
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__tel {
+  @extend %link;
+
+  font-size: 28px;
+  // font-size: 34px;
+
+  color: $color-accent;
+}
+
+.mobile-contacts__mail {
+  @extend %link;
+
+  font-size: 24px;
+
+  color: $color-text-secondary;
+}
+
+.menu-toggle {
+  @include centeredFlex();
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  color: $color-text-primary;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.menu-toggle--open {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+
+.menu-toggle--open {
+  fill: currentColor;
+}
+
+.menu-toggle--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  fill: currentColor;
+}
+
+.mobile-socials {
+  @extend %list;
+
+  display: flex;
+
+  font-weight: 500;
+  font-size: 10px;
+  // font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: $color-accent;
+}
+
+.mobile-socials__item {
+  padding-right: 10px;
+  padding-left: 10px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &:first-child {
+    padding-left: 0px;
+  }
+
+  &:last-child {
+    padding-right: 0px;
+  }
+}
+
+.mobile-socials__link {
+  @extend %link;
+}

@@ -24,18 +24,12 @@
     <!-- Хедер -->
     <header class="page-header">
       <div class="page-header__wrapper container">
+        <a href="./index.html" class="logo page-header__logo">
+          <span class="logo logo--accent">Web</span>Studio</a
+        >
         <!-- Навігація -->
         <nav class="site-nav">
-          <a href="./index.html" class="logo page-header__logo">
-            <span class="logo logo--accent">Web</span>Studio</a
-          >
-          <button type="button" class="site-nav__button">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-menu"></use>
-              <use href="./images/icons.svg#icon-menu-close"></use>
-            </svg>
-          </button>
-          <ul class="site-nav__list list">
+          <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
             </li>
@@ -47,6 +41,7 @@
             </li>
           </ul>
         </nav>
+        <!-- Контакти -->
         <ul class="contacts">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -65,6 +60,64 @@
             >
           </li>
         </ul>
+        <!-- Кнопка відкриття меню -->
+        <button
+          class="menu-toggle menu-toggle--open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="menu-toggle menu-toggle--close" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- Мобільне меню -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <!-- Кнопка закриття меню-->
+          <button class="menu-toggle js-close-menu" type="button">
+            <svg class="menu-toggle--close" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <!-- Меню -->
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <!-- Контакти у меню -->
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__tel"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <!-- Соцмережі у меню -->
+          <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -554,6 +607,13 @@
       })();
     </script>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
