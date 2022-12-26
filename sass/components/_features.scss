@@ -9,17 +9,24 @@
 .features__list {
   @extend %list;
 
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .features__item {
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+
+  flex-basis: calc((100% - 30px) / 2);
+
   //   flex-basis: calc((100% - 90px) / 4);
   //   // margin-right: 30px;
 

@@ -6,6 +6,9 @@
 .page-header__wrapper {
   // @include centeredFlex();
   display: flex;
-  justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+  }
+    justify-content: space-between;
 }
