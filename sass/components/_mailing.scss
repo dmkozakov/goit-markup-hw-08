@@ -1,6 +1,8 @@
-// .mailing--end {
-//   margin-left: 93px;
-// }
+.mailing--end {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
 
 .mailing__text {
   display: block;
@@ -34,17 +36,19 @@
   @media screen and (min-width: 768px) {
     width: 450px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
-// .mailing__block [type='email'] {
-
-//   //   margin-right: 12px;
-//   //   width: 358px;
-// }
-
-// .mailing__group {
-//    @include centeredFlex();
-// }
+.mailing__group {
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex();
+  }
+}
 
 .mailing__button {
   @include centeredFlex();
@@ -64,6 +68,9 @@
 
 .mailing__icon {
   margin-left: 12px;
-  //   margin-left: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
 }

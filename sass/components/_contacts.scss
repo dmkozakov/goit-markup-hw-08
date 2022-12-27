@@ -2,20 +2,25 @@
   @extend %list;
 
   display: inline-block;
-  // display: flex;
-  // align-items: center;
-  // margin-left: auto;
 
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  // font-size: 14px;
-  // line-height: 1.14;
+
   letter-spacing: 0.02em;
   text-align: start;
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -25,26 +30,34 @@
       margin-bottom: 10px;
     }
   }
-  // &:not(:first-child)
-  // margin-left: 50px;
+
+  &:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 40px;
+    }
+  }
 }
 
 .contacts__link {
   @extend %link;
-  // @include centeredFlex;
   display: flex;
   align-items: center;
 
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-
   color: $color-text-secondary;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
   margin-right: 8px;
-  // margin-right: 10px;
   fill: currentColor;
+  
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 
 .contacts__icon--mail {

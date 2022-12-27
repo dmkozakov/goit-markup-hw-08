@@ -2,15 +2,21 @@
   background-color: $color-bg-dark;
 }
 
-// .footer__section {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-// }
+.footer__section {
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .page-footer {
   text-align: center;
-  //   display: flex;
-  //   align-items: baseline;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: start;
+  }
 }
 
 .page-footer__wrapper {
@@ -20,6 +26,10 @@
     align-items: baseline;
 
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 

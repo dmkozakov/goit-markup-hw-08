@@ -27,7 +27,9 @@
 
   flex-basis: calc((100% - 30px) / 2);
 
-  //   flex-basis: calc((100% - 90px) / 4);
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
   //   // margin-right: 30px;
 
   //   // &:nth-child(4n) {
@@ -51,9 +53,13 @@
 
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
+
   text-transform: uppercase;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__descr {

@@ -37,7 +37,11 @@
 
 .page-footer__socials {
   margin-bottom: 60px;
-  // margin-left: 70px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+    margin-bottom: 0;
+  }
 }
 
 .socials__label {
