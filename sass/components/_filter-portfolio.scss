@@ -1,33 +1,48 @@
-// .filter {
-//   @include centeredFlex();
-//   @extend %list;
+.filter {
+  @extend %list;
+  //   @include centeredFlex();
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
 
-//   margin-bottom: 50px;
-//   gap: 8px;
-// }
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
 
 // // .filter__item:not(:first-child) {
 // //   margin-left: 8px;
 // // }
 
-// .filter__button {
-//   min-width: 73px;
-//   padding: 6px 22px;
+.filter__button {
+  min-width: 73px;
+  padding: 6px 22px;
 
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.62;
-//   letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 
-//   color: $color-text-primary;
-//   background-color: $color-btn-bg;
+  color: $color-text-primary;
+  background-color: $color-btn-bg;
 
-//   &:hover,
-//   &:focus {
-//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//       0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
 
-//     background-color: $color-accent;
-//     color: $color-text-inverse;
-//   }
-// }
+    background-color: $color-accent;
+    color: $color-text-inverse;
+  }
+}
