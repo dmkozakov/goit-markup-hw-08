@@ -190,37 +190,82 @@
           <ul class="examples__list">
             <li class="examples__item">
               <div class="examples__thumb">
-                <img
-                  class="examples__img"
-                  src="./images/example-1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Людина програмує"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-apps.webp    1x,
+                      ./images/desktop-apps@2x.webp 2x,
+                      ./images/desktop-apps@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="examples__img"
+                    srcset="
+                      ./images/desktop-apps.jpg    1x,
+                      ./images/desktop-apps@2x.jpg 2x,
+                      ./images/desktop-apps@3x.jpg 3x
+                    "
+                    src="./images/desktop-apps.jpg"
+                    width="370"
+                    height="294"
+                    alt="Людина програмує"
+                  />
+                </picture>
                 <h3 class="examples__descr">Десктопні додатки</h3>
               </div>
             </li>
             <li class="examples__item">
               <div class="examples__thumb">
-                <img
-                  class="examples__img"
-                  src="./images/example-2.jpg"
-                  width="370"
-                  height="294"
-                  alt="Людина обирає дизайн"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile-apps.webp    1x,
+                      ./images/mobile-apps@2x.webp 2x,
+                      ./images/mobile-apps@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="examples__img"
+                    srcset="
+                      ./images/mobile-apps.jpg    1x,
+                      ./images/mobile-apps@2x.jpg 2x,
+                      ./images/mobile-apps@3x.jpg 3x
+                    "
+                    src="./images/mobile-apps.jpg"
+                    width="370"
+                    height="294"
+                    alt="Людина обирає дизайн"
+                  />
+                </picture>
                 <h3 class="examples__descr">Мобільні додатки</h3>
               </div>
             </li>
             <li class="examples__item">
               <div class="examples__thumb">
-                <img
-                  class="examples__img"
-                  src="./images/example-3.jpg"
-                  width="370"
-                  height="294"
-                  alt="Людина обирає колір"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/design.webp    1x,
+                      ./images/design@2x.webp 2x,
+                      ./images/design@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="examples__img"
+                    srcset="
+                      ./images/design.jpg    1x,
+                      ./images/design@2x.jpg 2x,
+                      ./images/design@3x.jpg 3x
+                    "
+                    src="./images/design.jpg"
+                    width="370"
+                    height="294"
+                    alt="Людина обирає колір"
+                  />
+                </picture>
                 <h3 class="examples__descr">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -233,13 +278,67 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img
-                src="./images/member-1.jpg"
-                class="team__photo"
-                width="270"
-                height="260"
-                alt="Усміхнений хлопець в окулярах"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-demyanenko.webp    1x,
+                    ./images/mobile-demyanenko@2x.webp 2x,
+                    ./images/mobile-demyanenko@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-demyanenko.jpg    1x,
+                    ./images/mobile-demyanenko@2x.jpg 2x,
+                    ./images/mobile-demyanenko@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-demyanenko.webp    1x,
+                    ./images/desktop-demyanenko@2x.webp 2x,
+                    ./images/desktop-demyanenko@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-demyanenko.jpg    1x,
+                    ./images/desktop-demyanenko@2x.jpg 2x,
+                    ./images/desktop-demyanenko@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-demyanenko.webp    1x,
+                    ./images/tablet-demyanenko@2x.webp 2x,
+                    ./images/tablet-demyanenko@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-demyanenko.jpg    1x,
+                    ./images/tablet-demyanenko@2x.jpg 2x,
+                    ./images/tablet-demyanenko@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/tablet-demyanenko.jpg"
+                  class="team__photo"
+                  alt="Усміхнений хлопець в окулярах"
+                />
+              </picture>
               <h3 class="team__member">Ігор Дем'яненко</h3>
               <p class="team__pos">Product Designer</p>
               <div class="socials">
@@ -276,13 +375,69 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/member-2.jpg"
-                class="team__photo"
-                width="270"
-                height="260"
-                alt="Усміхнена дівчина в окулярах"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-repina.webp    1x,
+                    ./images/mobile-repina@2x.webp 2x,
+                    ./images/mobile-repina@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-repina.jpg    1x,
+                    ./images/mobile-repina@2x.jpg 2x,
+                    ./images/mobile-repina@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-repina.webp    1x,
+                    ./images/desktop-repina@2x.webp 2x,
+                    ./images/desktop-repina@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-repina.jpg    1x,
+                    ./images/desktop-repina@2x.jpg 2x,
+                    ./images/desktop-repina@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-repina.webp    1x,
+                    ./images/tablet-repina@2x.webp 2x,
+                    ./images/tablet-repina@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-repina.jpg    1x,
+                    ./images/tablet-repina@2x.jpg 2x,
+                    ./images/tablet-repina@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/tablet-repina.jpg"
+                  class="team__photo"
+                  width="270"
+                  height="260"
+                  alt="Усміхнена дівчина в окулярах"
+                />
+              </picture>
               <h3 class="team__member">Ольга Рєпіна</h3>
               <p class="team__pos">Frontend Developer</p>
               <div class="socials">
@@ -319,13 +474,69 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/member-3.jpg"
-                class="team__photo"
-                width="270"
-                height="260"
-                alt="Усміхнений хлопець в рубашці"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-tarasov.webp    1x,
+                    ./images/mobile-tarasov@2x.webp 2x,
+                    ./images/mobile-tarasov@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-tarasov.jpg    1x,
+                    ./images/mobile-tarasov@2x.jpg 2x,
+                    ./images/mobile-tarasov@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-tarasov.webp    1x,
+                    ./images/desktop-tarasov@2x.webp 2x,
+                    ./images/desktop-tarasov@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-tarasov.jpg    1x,
+                    ./images/desktop-tarasov@2x.jpg 2x,
+                    ./images/desktop-tarasov@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-tarasov.webp    1x,
+                    ./images/tablet-tarasov@2x.webp 2x,
+                    ./images/tablet-tarasov@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-tarasov.jpg    1x,
+                    ./images/tablet-tarasov@2x.jpg 2x,
+                    ./images/tablet-tarasov@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/tablet-tarasov.jpg"
+                  class="team__photo"
+                  width="270"
+                  height="260"
+                  alt="Усміхнений хлопець в рубашці"
+                />
+              </picture>
               <h3 class="team__member">Микола Тарасов</h3>
               <p class="team__pos">Marketing</p>
               <div class="socials">
@@ -362,13 +573,70 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/member-4.jpg"
-                class="team__photo"
-                width="270"
-                height="260"
-                alt="Хлопець в окулярах"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-ermakov.webp    1x,
+                    ./images/mobile-ermakov@2x.webp 2x,
+                    ./images/mobile-ermakov@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile-ermakov.jpg    1x,
+                    ./images/mobile-ermakov@2x.jpg 2x,
+                    ./images/mobile-ermakov@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-ermakov.webp    1x,
+                    ./images/desktop-ermakov@2x.webp 2x,
+                    ./images/desktop-ermakov@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop-ermakov.jpg    1x,
+                    ./images/desktop-ermakov@2x.jpg 2x,
+                    ./images/desktop-ermakov@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-ermakov.webp    1x,
+                    ./images/tablet-ermakov@2x.webp 2x,
+                    ./images/tablet-ermakov@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet-ermakov.jpg    1x,
+                    ./images/tablet-ermakov@2x.jpg 2x,
+                    ./images/tablet-ermakov@3x.jpg 3x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/tablet-ermakov.jpg"
+                  class="team__photo"
+                  width="270"
+                  height="260"
+                  alt="Хлопець в окулярах"
+                />
+              </picture>
+
               <h3 class="team__member">Михайло Єрмаков</h3>
               <p class="team__pos">UI Designer</p>
               <div class="socials">
