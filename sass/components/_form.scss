@@ -72,9 +72,9 @@
 // /* Чекбокс */
 
 .form__checkbox {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: inline-block;
+  // align-items: center;
+  // flex-wrap: wrap;
 
   margin: 20px auto 30px;
 
@@ -94,6 +94,8 @@
 }
 
 .checkbox__icon {
+  display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 15px;
   margin-right: 8px;

@@ -3,11 +3,12 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
   z-index: 3;
+  overflow-y: scroll;
 
   background-color: $color-bg-main;
 

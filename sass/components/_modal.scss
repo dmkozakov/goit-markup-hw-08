@@ -12,32 +12,50 @@
   height: 100%;
   z-index: 2;
 
+  overflow-y: auto;
+
   background-color: $color-modal-backdrop;
 
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 768px) {
+    padding: 95px 15px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 100px 15px;
+  }
 }
 
 .backdrop--is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
-}
+  transform: scale(1.2);
 
+  @media screen and (min-width: 1200px) {
+    transform: translate(-50%, -50%);
+  }
+}
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 95%;
 
   padding: 40px;
+  margin: 0 auto;
   border-radius: 4px;
 
   background-color: $color-bg-main;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media screen and (min-width: 1200px) {
