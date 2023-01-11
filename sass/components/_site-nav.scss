@@ -2,7 +2,6 @@
   display: block;
   @media screen and (max-width: 767px) {
     display: none;
-
   }
 }
 
@@ -12,22 +11,22 @@
 }
 
 .site-nav__item:not(:first-child) {
-margin-left: 50px;
+  margin-left: 50px;
 }
 
 .site-nav__link {
-@extend %link; 
+  @extend %link;
 
-position: relative;
-display: block;
-padding-top: 32px;
-padding-bottom: 32px;
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 
-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
   color: $color-text-primary;
 }
@@ -48,5 +47,17 @@ letter-spacing: 0.02em;
     border-radius: 2px;
 
     background-color: $color-accent;
+
+    animation: scale 250ms ease 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
   }
 }
