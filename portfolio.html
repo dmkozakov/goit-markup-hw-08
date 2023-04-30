@@ -131,31 +131,35 @@
     </header>
     <!-- Main -->
     <main>
-      <!-- Кнопки фільтру -->
       <section class="portfolio section">
         <div class="container">
           <!-- Прихований заголовок -->
           <h1 class="portfolio__title">Портфоліо</h1>
+          <!-- Кнопки фільтру -->
           <ul class="filter">
             <li class="filter__item">
-              <button type="button" class="button filter__button">Усі</button>
+              <button type="button" class="button filter__button" data-type="all">Усі</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button filter__button">Веб-сайти</button>
+              <button type="button" class="button filter__button" data-type="websites">
+                Веб-сайти
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button filter__button">Додатки</button>
+              <button type="button" class="button filter__button" data-type="apps">Додатки</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button filter__button">Дизайн</button>
+              <button type="button" class="button filter__button" data-type="design">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button filter__button">Маркетинг</button>
+              <button type="button" class="button filter__button" data-type="marketing">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!--  Приклади робот -->
           <ul class="projects">
-            <li class="projects__item">
+            <li class="projects__item" data-value="websites">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -236,7 +240,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="design">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -317,7 +321,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="apps">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -398,7 +402,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="marketing">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -479,7 +483,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="apps">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -560,7 +564,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="websites">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -641,7 +645,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="design">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -722,7 +726,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="marketing">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -803,7 +807,7 @@
               </a>
             </li>
 
-            <li class="projects__item">
+            <li class="projects__item" data-value="apps">
               <a class="project" href="#">
                 <div class="project__thumb">
                   <picture>
@@ -982,9 +986,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>

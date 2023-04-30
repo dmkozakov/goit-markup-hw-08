@@ -29,11 +29,15 @@
 }
 
 .backdrop--is-hidden .modal {
-  transform: scale(1.2);
+  transform: scale(1.2) translateX(-50%);
 
-  // @media screen and (min-width: 1200px) {
-  //   transform: translate(-50%, -50%);
-  // }
+  @media screen and (min-width: 480px) {
+    transform: scale(1.2) translateX(-50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: scale(1.2) translate(-50%, -50%);
+  }
 }
 .modal {
   width: 95%;
@@ -53,12 +57,14 @@
 
   @media screen and (min-width: 480px) {
     max-width: 450px;
+
+    transform: scale(1) translateX(-50%);
   }
 
   @media screen and (min-width: 1200px) {
-    // position: absolute;
+    position: absolute;
     top: 50%;
-    // left: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     max-width: 528px;
     max-height: 581px;
