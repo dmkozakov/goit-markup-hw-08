@@ -37,8 +37,13 @@ function changeFilterState(evt) {
 function filterProjects(evt) {
   const currentFilter = evt.target;
   const projects = [...refs.projects];
+  const isActive = currentFilter.classList.contains("filter__button--is-active");
 
   if (currentFilter.dataset.type === "all") {
+    return projects.forEach(el => (el.hidden = false));
+  }
+
+  if (!isActive) {
     return projects.forEach(el => (el.hidden = false));
   }
 
